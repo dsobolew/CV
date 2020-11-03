@@ -1,0 +1,52 @@
+---
+name: Dennis
+surname: Sobolewski
+position: "Data Scientist"
+address: "Chicago, Illinois"
+phone: +1 609 280 4734
+www: dsobolew.me
+email: "Dennis.Sobolewski@gmail.com"
+twitter: djsobolew
+github: dsobo
+linkedin: dsobolew
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Some stuff about me
+
+Data science generalist and experienced team builder with a track record of success working with all levels of the organization. Business background with significant development experience in R, SQL, & others, as well as an exceptional ability to communicate complex concepts to a wide range of audiences. Always seeking opportunities to innovate or use new technologies while keeping user experience and business problems front and center.
+
+# Education
+
+```{r education}
+tibble::tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "MSc in Business Analytics", "University of Notre Dame", "South Bend, Indiana", "2015 - 2016", "Recipient of the Econometrics Honours Memorial Scholarship, Dean's Honour, Dean's Commendation, and best in class for 5 units.",
+  "Bachelor of Finance", "University of Notre Dame", "South Bend, Indiana", "2007 - 2011", "Honours research project was to develop a state space model for quickly forecasting time series with multiple seasonalities."
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Work Experience
+
+```{r consulting}
+tibble::tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Line 1 about the projects I've worked on .",
+    "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Line 2 about the projects I've worked on .",
+    "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Line 3 about the projects I've worked on .",
+    "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Line 4 about the projects I've worked on .",
+  "Analytics Specialist", "Northern Trust Corporation", "Chicago, IL", "Jul. 2014 - Mar. 2018", "Line 1 about the projects I've worked on .",
+    "Analytics Specialist", "Northern Trust Corporation", "Chicago, IL", "Jul. 2014 - Mar. 2018", "Line 2 about the projects I've worked on .",
+  "Quality Assurance Analyst", "Epic", "Madison, WI", "Jul. 2011 - Jul. 2014", "Line 1 about the projects I've worked on ."
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
