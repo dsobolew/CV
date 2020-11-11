@@ -56,15 +56,15 @@ tibble::tribble(
 tibble::tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Built forecasting models to predict patient access center call volumes and applied queueing theory principals to determing optimal staffing levels.",
-    "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Designed and co-developed a custom patient access center data warehouse in MS Visual Studio for automatic deployment and ingestion of multiple data sources.",
+    "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Designed and co-developed a custom patient access center data warehouse using MS Visual Studio for automatic deployment and ingestion of multiple data sources.",
     "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Performed spatial autocorrelation tests on ICD codes within a patient population to determine areas of statistically significant clustering and dispersion.",
-    "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Developed a Case Mix Index predictive model to identify under and over-coded hospital accounts to maximise reimbursement and reduce denials..",
+    "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Developed a Case Mix Index predictive model to identify under and over-coded hospital accounts to maximise reimbursement and reduce denials.",
     "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Performed exploratory data analyses on multiple Epic healthcare data sources and communicated results for project decision making.",
-  "Analytics Specialist", "Northern Trust Corporation", "Chicago, IL", "Jul. 2014 - Mar. 2018", "Performed data validation to ensure reporting accuracy for all product release....",
-    "Analytics Specialist", "Northern Trust Corporation", "Chicago, IL", "Jul. 2014 - Mar. 2018", "Performed data validation to ensure reporting accuracy for all product release....",
-  "Analytics Specialist", "Northern Trust Corporation", "Chicago, IL", "Jul. 2014 - Mar. 2018", "Built and managed an automated processes for updating and auditing security permissions within Nothern Trust's proprietary hedge fund administration software.",
+      "Data scientist", "Bluetree Network", "Madison, WI", "Mar. 2018 - Present", "Developed custom clarity and caboodle queries, validated the output, and build operational tableau dashboards for both executives and ground team members within a healthcare organization.",
+    "Analytics Specialist", "Northern Trust Corporation", "Chicago, IL", "Jul. 2014 - Mar. 2018", "Developed a regression testing tool for validating financial transaction data models between development and production application environments.",
+  "Analytics Specialist", "Northern Trust Corporation", "Chicago, IL", "Jul. 2014 - Mar. 2018", "Built and managed an automated processes for auditing security permissions within Nothern Trust's proprietary hedge fund administration software.",
   "Quality Assurance Analyst", "Epic", "Madison, WI", "Jul. 2011 - Jul. 2014", "Designed and tested Epic's proprietary healthcare software along side developers and implementation staff.",
-    "Quality Assurance Analyst", "Epic", "Madison, WI", "Jul. 2011 - Jul. 2014", "Designed and tested Epic's proprietary healthcare software along side developers and implementation staff."
+    "Quality Assurance Analyst", "Epic", "Madison, WI", "Jul. 2011 - Jul. 2014", "Conducted client demos on new functionality within the HB/PB billing and Claims and Remittance Epic modules."
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
 
@@ -74,14 +74,14 @@ tibble::tribble(
 \vspace{-1truemm}
 
 # Skills and Technologies
-```{r fig.height=2, fig.width=2.5, fig.align='center'}
+```{r fig.height=1.8, fig.width=2.5, fig.align='center'}
 
 # Library
 library(fmsb)
  
 # Create data: note in High school for Jonathan:
-data <- as.data.frame(matrix( c(20, 18, 15, 15, 10, 20, 12, 18, 5) , ncol=9))
-colnames(data) <- c("R-coding" , "Tableau" , "Git"  , "Machine\n Learning" , "Visual\n Studio" , "Data-Viz" ,"DevOps", "SQL" , "Python")
+data <- as.data.frame(matrix( c(20, 18, 15, 15, 18, 20, 12, 10, 5) , ncol=9))
+colnames(data) <- c("R-coding" , "Tableau" , "Git"  , "Machine\n Learning" ,"SQL" , "Data-Viz" ,"DevOps","Visual\n Studio" , "Python")
  
 # To use the fmsb package, I have to add 2 lines to the dataframe: the max and min of each topic to show on the plot!
 data <- rbind(rep(20,10) , rep(0,10) , data)
